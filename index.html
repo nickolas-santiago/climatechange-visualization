@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="//code.jquery.com/jquery-2.0.0.js"></script>
+    <title>Global Surface Temperature Visualization</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Yrsa:400,500" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Global Surface Temperature by Country in January </h1>
+    <div id="map"></div>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <div class="footerControls">
+      <div id="playButton" class="playButton">
+        <div class="play"></div>
+      </div>
+      <div id="sliderDiv">
+        <input id="aslider" type="range" id="myRange" min="1750" max="2013">
+        <p id="minYear" class="sliderLabel">1750</p>
+        <p id="maxYear" class="sliderLabel">2013</p>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

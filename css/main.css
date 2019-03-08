@@ -1,0 +1,245 @@
+html, body, #map {
+  width: 100%;
+}
+
+#maincontent
+{
+    width: 72%;
+}
+
+body {
+  margin: 0;
+  background-color: #FCFBFA;
+  font-family: 'Yrsa', serif;
+}
+
+#map {
+  background-color: #D5E0DE;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+#countries, #states {
+  fill: #F5F5F5;
+  stroke: #668A87;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+#countries .active, #states .active {
+  fill: #F5F5F5;
+}
+
+#cities {
+  stroke-width: 0;
+}
+
+.city {
+  fill: #345;
+  stroke: #fff;
+}
+
+pre.prettyprint {
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  padding: 9.5px;
+}
+
+#tempLegend {
+  transform: translate(35px, 0) rotate(90deg);
+  stroke: #668A87;
+}
+
+#title
+{
+  font-weight: 500;
+  font-size: 1.4em;
+  margin: 12px auto;
+  text-align: center;
+}
+
+/***CSS for slider***/
+#sliderDiv {
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 50px;
+  border-left: 1pt solid #dedede;
+  border-right: 1pt solid #dedede;
+}
+
+.footerControls {
+  background-color: #f5f5f5;
+  text-align: center;
+  border-bottom: 1pt solid #dedede;
+}
+
+.playButton {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 18px;
+  margin-right: -5px;
+  border-left: 1pt solid #dedede;
+  transition: all 0.3s ease;
+}
+
+.playButton.disabled {
+  pointer-events: none;
+  background-color: #f5f5f5 !important;
+}
+
+.playButton.disabled .play, .playButton.disabled:hover .play {
+  border-left-color: #dedede;
+}
+
+.playButton:hover {
+  cursor: pointer;
+  background-color: #EDEDED;
+}
+
+.play {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 16px solid #383838;
+  border-bottom: 10px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.playButton:hover .play {
+  border-left-color: #47D1A8;
+}
+
+.playButton.disabled {
+  pointer-events: none;
+  background-color: #f5f5f5 !important;
+}
+
+.playButton.disabled .play, .playButton.disabled:hover .play {
+  border-left-color: #dedede;
+}
+
+.playButton:hover {
+  cursor: pointer;
+  background-color: #EDEDED;
+}
+
+.play {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 16px solid #383838;
+  border-bottom: 10px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.playButton:hover .play {
+  border-left-color: #47D1A8;
+}
+
+.sliderLabel {
+    font-weight: 500;
+    font-size: 14pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.legendAxis {
+  font-size: 8pt;
+  fill: #668A87;
+  transform: translate(20px, 219px);
+}
+
+.legendAxis .domain {
+  display: none;
+}
+
+#minYear
+{
+    float: left;
+    margin-left: -24.5px;
+}
+#maxYear
+{
+    float: right;
+    margin-right: -24.5px;
+}
+input[type=range]
+{
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+}
+input[type=range]:focus
+{
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track
+{
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #000000;
+  border-radius: 8px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb
+{
+  box-shadow: 0px 0px 0px #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 16px;
+  background-color: #47D1A8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]::-webkit-slider-runnable-track
+{
+  height: 2px;
+  background: #383838;
+}
+
+.axis {
+  font-size: 9pt;
+}
+
+.axis .domain {
+  fill: none;
+  stroke: black;
+}
+
+.axis line {
+  stroke: black;
+}
+
+.linechartBG {
+  fill: rgba(246, 246, 246, 0.94);
+  width: 100%;
+  height: 100%;
+}
+
+.linechartTitle {
+  font-size: 15px;
+}
+
+.tempLine
+{
+    stroke: #232323;
+    stroke-width: 2;
+    fill: none;
+}
+#toolTipCountryName
+{
+    position: fixed;
+    float: left;
+    margin-left: 12%;
+    margin-bottom: 3%;
+    color: steelblue;
+    font-size: 34pt;
+}
